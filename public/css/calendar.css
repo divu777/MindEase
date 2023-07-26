@@ -1,0 +1,358 @@
+/* fonts:  */
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Gascogne */
+@font-face {
+    font-family: 'gascogne';
+    src: url('/fonts/Gascogne-Regular.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FAF9F6;
+}
+
+section{
+  display: flex;
+  height: 100vh;
+  
+  }
+
+  .navigation {
+    /* position: fixed; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* top: 0; */
+    
+    height: 100vh;
+    width: 20vw;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    
+    margin: 2em;
+  }
+  
+  .navigation li {
+    margin: 3em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    color: #111213c5;
+    letter-spacing: 1.2;
+    font-size: 1.2em;
+  }
+  
+  .navigation li a {
+    
+    /* text-align: center; */
+    color: #111213c5;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.5em;
+    
+  }
+  
+  .current {
+    /* background-color: #f0f0f0; */
+  }
+
+  .current a i{
+    color: rgb(99, 190, 255);
+  }
+  
+  
+  
+  .current span {
+    color: rgb(99, 190, 255);
+    font-weight: 700;
+  }
+  
+
+  
+  
+  .navigation li a i {
+    /* display: block; */
+    margin-bottom: 0;
+    font-size: 1.1em;
+  }
+
+  #mySidenav::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  #mySidenav::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  #mySidenav::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  #mySidenav::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+
+  
+  .maincontainer{
+    
+    width: 80vw;
+    height: 100vh;
+    background-image: url("/Images/bgbg.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.479);
+    background-blend-mode: lighten;
+    /* background-attachment: fixed; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* align-self: center; */
+  }
+
+  #mymainnav::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  #mymainnav::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  #mymainnav::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  #mymainnav::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  .profile{
+    width: 8em;
+  }
+
+
+  .head{
+    display: flex;
+    margin-bottom: 2em;
+    margin-left: 4.2em;
+    margin-top: 2em;
+    align-items: center;
+  }
+
+  .head .heading{
+    font-family: 'gascogne', sans-serif;
+    font-size: 1.5em;
+    margin-left: 0.8em;
+    /* margin-top: 0.8em; */
+    line-height: 1.5em;
+  }
+
+  .head .heading span{
+    color:#0e010d;;
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+
+  .head a{
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 2.5em;
+    margin-right: 3.2em;
+  }
+
+
+  .appointments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  
+  .appointments-container h2 {
+    font-weight: 500;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .upcoming-appointments,
+  .past-appointments {
+    margin-bottom: 50px;
+
+  }
+  
+  .upcoming-appointments h3,
+  .past-appointments h3 {
+    margin-top: 3em;
+    margin-bottom: 20px;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'inter',sans-serif;
+  }
+  
+  .appointments {
+    background-color: #ffd9fd;
+    border-radius: 10px;
+    box-shadow: #0e010d 3px 3px 10px;
+    padding: 20px;
+    margin-bottom: 1em;
+    position: relative;
+  }
+  
+  .appointments p {
+    margin: 0;
+    
+  }
+  
+  .cancel-appointment-btn,
+  .view-feedback-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .cancel-appointment-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .view-feedback-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+  footer {
+    background-color: #161515;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  
+  .footer-column {
+    width: 23%;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+      color: whitesmoke;
+      font-family: 'gascogne', sans-serif;
+  }
+  
+  .footer-column p {
+    font-size: 1.3vw;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(195, 191, 191);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-column ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  .footer-column li {
+    font-size: 1.3vw;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: rgb(195, 191, 191);
+    font-family: 'Inter',sans-serif;
+  }
+  
+  .footer-column a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    line-height: 1.5;
+    color: rgb(195, 191, 191);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-column a:hover {
+    color: #007bff;
+  }
+  
+  .footer-column i {
+    font-size: 1.2em;
+    margin-right: 0.8em;
+  }
+  
+  .footer-column form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-column input[type="email"] {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%;
+  }
+  
+  .footer-column button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-column button[type="submit"]:hover {
+    scale: 1.04;
+  }
+  
+  .footer-bottom a{
+      margin-bottom: 1em;
+  
